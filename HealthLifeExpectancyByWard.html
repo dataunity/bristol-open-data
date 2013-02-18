@@ -1,11 +1,29 @@
+<!DOCTYPE html>
 <html>
 <head>
     <title>Open Data Bristol</title>
-    <link rel="stylesheet" href="css/site.css" />
+    <link rel="stylesheet" type="text/css" href="css/site.css">
 </head>
 <body>
     <h1>Bristol Open Data</h1>
-    <h2>Life expectancy by ward</h2>
+    <h2>Life expectancy at birth by ward</h2>
+    <p>
+        This page shows life expectancy at birth from data.bristol.gov.uk broken down by ward. It was created on the South West Big Data HackReduce day on 16 Feb 2013. The ipython notebook used to create the charts can be found <a href="Mortality.ipynb">here</a>. The code is is pretty raw with plenty of hacks, but a realistic view of what was put together over a couple of hours on Saturday.
+    </p>
+    <p>
+        Some noteable points are:
+        <ul>
+            <li>There is a difference of almost 10 years in the life expectancy of the Bristol wards (2006-2011) - from 75.6 to 85.2 years.</li>
+            <li>Life expectancy is rising in almost all the wards.</li>
+            <li>The wards with the lowest life expectancy are Southmead, Southville, Cabot, Lockleaze and Easton</li>
+            <li>The highest life expectancy is in Henleaze, Bishopston, Stoke Bishop, Clifton and Cotham</li>
+            <li>Easton saw a drop in life expectancy of over a year in the 2001 to 2010 periods, but recoved slightly in the 2006-2011 results</li>
+            <li>Hillfields saw a drop and recovery. It would be interesting to see find out what caused the drop in the periods leading up to 2003-2008 and what happened to bring about a recovery.</li>
+        </ul>
+    </p>
+    <p>
+        Source: http://profiles.bristol.gov.uk/IAS/dataviews/view?viewId=485 (file dataView485_24.csv).
+    </p>
     <p>
         <img src='img/health/Life-expectancy-at-birth.png' alt='Life expectancy by ward'/>
     </p>
